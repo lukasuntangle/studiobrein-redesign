@@ -1,5 +1,415 @@
 <!DOCTYPE html>
 <html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarieven | Studio Brein Neurofeedback</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <svg class="logo-icon" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25 5C15 5 10 15 10 22C10 29 15 35 15 40H35C35 35 40 29 40 22C40 15 35 5 25 5Z" stroke="#1a1a2e" stroke-width="2" fill="none"/>
+                    <path d="M20 40V45H30V40" stroke="#1a1a2e" stroke-width="2"/>
+                    <path d="M18 22C18 22 22 18 25 22C28 26 32 22 32 22" stroke="#E8A54B" stroke-width="2" fill="none"/>
+                    <line x1="25" y1="2" x2="25" y2="5" stroke="#4A9BD9" stroke-width="2"/>
+                    <line x1="15" y1="5" x2="17" y2="8" stroke="#4A9BD9" stroke-width="2"/>
+                    <line x1="35" y1="5" x2="33" y2="8" stroke="#4A9BD9" stroke-width="2"/>
+                </svg>
+                <div class="logo-text">STUDIO <span>BREIN.</span></div>
+            </a>
+            <nav>
+                <a href="index.html">Studio Brein</a>
+                <a href="behandelingen.html">Behandelingen</a>
+                <a href="hoe-werkt-het.html">Hoe werkt het</a>
+                <a href="over-jorien.html">Over Jorien</a>
+                <a href="tarieven.html" class="active">Tarieven</a>
+            </nav>
+            <div class="header-contact">
+                <a href="tel:0681901059" class="header-phone">
+                    <span>📞</span> 068 190 1059
+                </a>
+                <a href="afspraak.html" class="btn btn-cta">Gratis gesprek plannen</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="min-height: auto; padding: 100px 0 60px;">
+        <div class="hero-container">
+            <div class="hero-content" style="max-width: 700px;">
+                <p class="label">Tarieven</p>
+                <h1>Investering in een <span class="highlight">rustiger brein</span></h1>
+                <p>Transparante prijzen zonder verrassingen. Een compleet neurofeedback traject is een investering in je mentale gezondheid met blijvend resultaat.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Cards -->
+    <section class="alt-bg">
+        <div class="container">
+            <div class="section-header">
+                <p class="label">Overzicht</p>
+                <h2>Wat kost neurofeedback?</h2>
+            </div>
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <h3>Kennismakingsgesprek</h3>
+                    <div class="price">Gratis</div>
+                    <p style="color: #666; margin-bottom: 20px;">Telefonisch, 15-20 minuten</p>
+                    <ul>
+                        <li>✓ Bespreking van je situatie</li>
+                        <li>✓ Uitleg over neurofeedback</li>
+                        <li>✓ Advies of het bij je past</li>
+                        <li>✓ Ruimte voor al je vragen</li>
+                    </ul>
+                    <a href="afspraak.html" class="btn btn-secondary" style="width: 100%; margin-top: 20px;">Plan gratis gesprek</a>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="popular-badge">Meest gekozen</div>
+                    <h3>Compleet traject</h3>
+                    <div class="price">€2.825 - €3.700</div>
+                    <p style="color: #666; margin-bottom: 20px;">15-20 sessies, 3-4 maanden</p>
+                    <ul>
+                        <li>✓ Intake + QEEG hersenscan (€200)</li>
+                        <li>✓ Persoonlijk behandelplan</li>
+                        <li>✓ 15-20 neurofeedback sessies</li>
+                        <li>✓ Voortgangsgesprekken</li>
+                        <li>✓ Eindmeting inbegrepen</li>
+                        <li>✓ Blijvend resultaat</li>
+                    </ul>
+                    <a href="afspraak.html" class="btn btn-cta" style="width: 100%; margin-top: 20px;">Start nu</a>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Intake + QEEG</h3>
+                    <div class="price">€200</div>
+                    <p style="color: #666; margin-bottom: 20px;">Eenmalig, ca. 1,5 uur</p>
+                    <ul>
+                        <li>✓ Uitgebreide intake</li>
+                        <li>✓ QEEG hersenscan</li>
+                        <li>✓ Analyse hersenactiviteit</li>
+                        <li>✓ Persoonlijk behandelplan</li>
+                    </ul>
+                    <a href="afspraak.html" class="btn btn-secondary" style="width: 100%; margin-top: 20px;">Vraag info aan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Losse tarieven -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <p class="label">Alle tarieven</p>
+                <h2>Gedetailleerd tarievenoverzicht</h2>
+            </div>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <table style="width: 100%; border-collapse: collapse;">
+                    <thead>
+                        <tr style="border-bottom: 2px solid #1a1a2e;">
+                            <th style="text-align: left; padding: 15px 0; font-size: 1.1rem;">Dienst</th>
+                            <th style="text-align: left; padding: 15px 0; font-size: 1.1rem;">Duur</th>
+                            <th style="text-align: right; padding: 15px 0; font-size: 1.1rem;">Tarief</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid #eee;">
+                            <td style="padding: 20px 0;">
+                                <strong>Kennismakingsgesprek</strong>
+                                <p style="color: #666; font-size: 0.9rem; margin-top: 5px;">Telefonisch, vrijblijvend</p>
+                            </td>
+                            <td style="padding: 20px 0; color: #666;">15-20 min</td>
+                            <td style="padding: 20px 0; text-align: right; font-weight: 600; color: #4A9BD9;">Gratis</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #eee;">
+                            <td style="padding: 20px 0;">
+                                <strong>Intake + QEEG hersenscan</strong>
+                                <p style="color: #666; font-size: 0.9rem; margin-top: 5px;">Incl. analyse en behandelplan</p>
+                            </td>
+                            <td style="padding: 20px 0; color: #666;">1,5 uur</td>
+                            <td style="padding: 20px 0; text-align: right; font-weight: 600;">€200</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #eee;">
+                            <td style="padding: 20px 0;">
+                                <strong>Neurofeedback sessie</strong>
+                                <p style="color: #666; font-size: 0.9rem; margin-top: 5px;">Training + nabespreking</p>
+                            </td>
+                            <td style="padding: 20px 0; color: #666;">45 min</td>
+                            <td style="padding: 20px 0; text-align: right; font-weight: 600;">€175</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #eee;">
+                            <td style="padding: 20px 0;">
+                                <strong>Follow-up QEEG</strong>
+                                <p style="color: #666; font-size: 0.9rem; margin-top: 5px;">Controlemeting na traject</p>
+                            </td>
+                            <td style="padding: 20px 0; color: #666;">1 uur</td>
+                            <td style="padding: 20px 0; text-align: right; font-weight: 600;">€150</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 20px 0;">
+                                <strong>Evaluatiegesprek</strong>
+                                <p style="color: #666; font-size: 0.9rem; margin-top: 5px;">Tussentijdse evaluatie</p>
+                            </td>
+                            <td style="padding: 20px 0; color: #666;">30 min</td>
+                            <td style="padding: 20px 0; text-align: right; font-weight: 600;">Inbegrepen</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rekenvoorbeeld -->
+    <section class="alt-bg">
+        <div class="container">
+            <div class="section-header">
+                <p class="label">Rekenvoorbeeld</p>
+                <h2>Wat kost een typisch traject?</h2>
+            </div>
+            <div style="max-width: 600px; margin: 0 auto; background: white; padding: 40px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
+                <p style="margin-bottom: 30px; color: #666;">De meeste cliënten hebben 15-20 sessies nodig. Hieronder een rekenvoorbeeld voor een gemiddeld traject:</p>
+
+                <div style="border-bottom: 1px solid #eee; padding-bottom: 15px; margin-bottom: 15px; display: flex; justify-content: space-between;">
+                    <span>Intake + QEEG hersenscan</span>
+                    <span>€200</span>
+                </div>
+                <div style="border-bottom: 1px solid #eee; padding-bottom: 15px; margin-bottom: 15px; display: flex; justify-content: space-between;">
+                    <span>17 neurofeedback sessies (gemiddeld)</span>
+                    <span>€2.975</span>
+                </div>
+                <div style="border-bottom: 1px solid #eee; padding-bottom: 15px; margin-bottom: 15px; display: flex; justify-content: space-between;">
+                    <span>Eindmeting + evaluatie</span>
+                    <span style="color: #4A9BD9;">Inbegrepen</span>
+                </div>
+                <div style="padding-top: 15px; display: flex; justify-content: space-between; font-size: 1.2rem; font-weight: 600;">
+                    <span>Totaal traject</span>
+                    <span style="color: #E8A54B;">€3.175</span>
+                </div>
+
+                <p style="margin-top: 30px; padding: 20px; background: #f5f5f0; border-radius: 10px; font-size: 0.95rem;">
+                    💡 <strong>Tip:</strong> Verdeel de kosten over 3-4 maanden door per sessie te betalen. Zo heb je maandelijkse kosten van ca. €700-900.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vergoedingen -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <p class="label">Vergoedingen</p>
+                <h2>Wordt neurofeedback vergoed?</h2>
+            </div>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 40px;">
+                    <div style="background: #f5f5f0; padding: 30px; border-radius: 15px;">
+                        <h3 style="color: #4A9BD9; margin-bottom: 15px;">✓ Aanvullende verzekering</h3>
+                        <p>Neurofeedback valt onder alternatieve geneeswijzen. Steeds meer verzekeraars vergoeden (een deel van) de behandeling vanuit de aanvullende verzekering.</p>
+                    </div>
+                    <div style="background: #f5f5f0; padding: 30px; border-radius: 15px;">
+                        <h3 style="color: #4A9BD9; margin-bottom: 15px;">✗ Basisverzekering</h3>
+                        <p>Neurofeedback wordt momenteel niet vergoed vanuit de basisverzekering. Dit kan in de toekomst veranderen naarmate meer onderzoek beschikbaar komt.</p>
+                    </div>
+                </div>
+
+                <div style="background: white; padding: 30px; border-radius: 15px; border: 2px solid #4A9BD9;">
+                    <h3 style="margin-bottom: 15px;">Hoe check je je vergoeding?</h3>
+                    <ol style="margin-left: 20px; line-height: 2;">
+                        <li>Check je polis op vergoeding "alternatieve geneeswijzen" of "neurofeedback"</li>
+                        <li>Bel je zorgverzekeraar en vraag specifiek naar neurofeedback</li>
+                        <li>Vraag of er een maximum per jaar geldt</li>
+                        <li>Vraag of er een verwijzing van de huisarts nodig is</li>
+                    </ol>
+                    <p style="margin-top: 20px; color: #666;">Bij twijfel help ik je graag met het uitzoeken van je vergoedingsmogelijkheden.</p>
+                </div>
+
+                <div style="margin-top: 40px; text-align: center;">
+                    <p style="color: #666; margin-bottom: 20px;">Verzekeraars die vaak (deels) vergoeden:</p>
+                    <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; color: #888;">
+                        <span>• CZ</span>
+                        <span>• VGZ</span>
+                        <span>• Menzis</span>
+                        <span>• Zilveren Kruis</span>
+                        <span>• ONVZ</span>
+                        <span>• a.s.r.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Betaling -->
+    <section class="alt-bg">
+        <div class="container">
+            <div class="section-header">
+                <p class="label">Praktisch</p>
+                <h2>Betaling & facturatie</h2>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; max-width: 900px; margin: 0 auto;">
+                <div style="background: white; padding: 30px; border-radius: 15px; text-align: center;">
+                    <div style="font-size: 2.5rem; margin-bottom: 15px;">💳</div>
+                    <h3 style="margin-bottom: 10px;">Betalen per sessie</h3>
+                    <p style="color: #666;">Je betaalt na elke sessie via iDeal, pin of contant. Geen grote bedragen vooraf.</p>
+                </div>
+                <div style="background: white; padding: 30px; border-radius: 15px; text-align: center;">
+                    <div style="font-size: 2.5rem; margin-bottom: 15px;">📄</div>
+                    <h3 style="margin-bottom: 10px;">Factuur per e-mail</h3>
+                    <p style="color: #666;">Je ontvangt een factuur die je kunt declareren bij je zorgverzekeraar.</p>
+                </div>
+                <div style="background: white; padding: 30px; border-radius: 15px; text-align: center;">
+                    <div style="font-size: 2.5rem; margin-bottom: 15px;">⏰</div>
+                    <h3 style="margin-bottom: 10px;">Annuleren</h3>
+                    <p style="color: #666;">Tot 24 uur van tevoren kosteloos annuleren of verzetten.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <p class="label">Veelgestelde vragen</p>
+                <h2>Vragen over tarieven & vergoeding</h2>
+            </div>
+            <div class="faq-container" style="max-width: 800px; margin: 0 auto;">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Hoeveel sessies heb ik nodig?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>De meeste cliënten hebben 15-20 sessies nodig voor blijvend resultaat. Dit verschilt per persoon en klacht. Na de QEEG hersenscan kan ik een persoonlijke inschatting geven.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Kan ik betalen in termijnen?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Je betaalt per sessie, dus automatisch gespreid over het traject. Je hoeft geen grote bedragen vooraf te betalen. De maandelijkse kosten zijn daardoor goed te overzien.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Heb ik een verwijzing van de huisarts nodig?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Voor neurofeedback is geen verwijzing nodig. Sommige verzekeraars vragen wel om een verwijzing voor vergoeding. Check dit bij je zorgverzekeraar.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Wat als ik niet tevreden ben?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Na de eerste 5 sessies evalueren we de voortgang. Als neurofeedback niet voor jou blijkt te werken, bespreken we dit eerlijk en stoppen we indien gewenst. Je betaalt alleen voor de sessies die je hebt gehad.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Waarom is neurofeedback duurder dan reguliere therapie?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Neurofeedback vereist gespecialiseerde apparatuur (QEEG, neurofeedback systemen) en intensieve training. Daarnaast zijn de effecten blijvend - je hoeft niet jarenlang terug te komen zoals bij veel andere behandelingen.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="blue-bg">
+        <div class="cta-section" style="color: white;">
+            <h2 style="color: white;">Vragen over de kosten?</h2>
+            <p style="color: rgba(255,255,255,0.9);">Ik help je graag met het uitzoeken van je vergoedingsmogelijkheden. Plan een gratis kennismakingsgesprek of bel me direct.</p>
+            <a href="afspraak.html" class="btn btn-cta btn-large">Plan gratis gesprek</a>
+            <p style="margin-top: 20px; color: rgba(255,255,255,0.7);">Of bel direct: <a href="tel:0681901059" style="color: white; font-weight: 600;">068 190 1059</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="logo-text">STUDIO <span style="color: #E8A54B;">BREIN.</span></div>
+                <p>Neurofeedback praktijk in Uitgeest. Al meer dan 300 cliënten geholpen op weg naar een rustiger brein.</p>
+                <p>📍 Langebuurt 17, 1911 AS Uitgeest</p>
+                <p>📞 068 190 1059</p>
+            </div>
+            <div class="footer-section">
+                <h4>Behandelingen</h4>
+                <ul>
+                    <li><a href="behandelingen.html#piekeren">Angst & Piekeren</a></li>
+                    <li><a href="behandelingen.html#concentratie">ADHD & Concentratie</a></li>
+                    <li><a href="behandelingen.html#stress">Burn-out & Stress</a></li>
+                    <li><a href="behandelingen.html#slaap">Slaapproblemen</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Informatie</h4>
+                <ul>
+                    <li><a href="hoe-werkt-het.html">Hoe werkt het</a></li>
+                    <li><a href="tarieven.html">Tarieven</a></li>
+                    <li><a href="over-jorien.html">Over Jorien</a></li>
+                    <li><a href="#">Veelgestelde vragen</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="afspraak.html">Afspraak maken</a></li>
+                    <li><a href="tel:0681901059">Bellen</a></li>
+                    <li><a href="mailto:jorien@studiobrein.nl">E-mail</a></li>
+                    <li><a href="#">Routebeschrijving</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Studio Brein. Alle rechten voorbehouden. | <a href="#" style="color: #888;">Privacy Policy</a> | <a href="#" style="color: #888;">Algemene Voorwaarden</a></p>
+        </div>
+    </footer>
+
+    <!-- Sticky CTA Bar -->
+    <div class="sticky-cta">
+        <p>Klaar om de eerste stap te zetten?</p>
+        <a href="afspraak.html" class="btn btn-cta">Plan gratis gesprek</a>
+        <a href="tel:0681901059" class="btn btn-secondary">📞 Bel: 068 190 1059</a>
+    </div>
+
+    <script>
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                const isOpen = faqItem.classList.contains('open');
+
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('open');
+                });
+
+                if (!isOpen) {
+                    faqItem.classList.add('open');
+                }
+            });
+        });
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="nl">
   <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
