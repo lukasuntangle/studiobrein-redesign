@@ -1,5 +1,321 @@
 <!DOCTYPE html>
 <html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maak een afspraak | Studio Brein</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <svg class="logo-icon" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25 5C15 5 10 15 10 22C10 29 15 35 15 40H35C35 35 40 29 40 22C40 15 35 5 25 5Z" stroke="#1a1a2e" stroke-width="2" fill="none"/>
+                    <path d="M20 40V45H30V40" stroke="#1a1a2e" stroke-width="2"/>
+                    <path d="M18 22C18 22 22 18 25 22C28 26 32 22 32 22" stroke="#E8A54B" stroke-width="2" fill="none"/>
+                    <line x1="25" y1="2" x2="25" y2="5" stroke="#4A9BD9" stroke-width="2"/>
+                    <line x1="15" y1="5" x2="17" y2="8" stroke="#4A9BD9" stroke-width="2"/>
+                    <line x1="35" y1="5" x2="33" y2="8" stroke="#4A9BD9" stroke-width="2"/>
+                </svg>
+                <div class="logo-text">STUDIO <span>BREIN.</span></div>
+            </a>
+            <nav>
+                <a href="index.html">Studio Brein</a>
+                <a href="behandelingen.html">Behandelingen</a>
+                <a href="hoe-werkt-het.html">Hoe werkt het</a>
+                <a href="over-jorien.html">Over Jorien</a>
+                <a href="tarieven.html">Tarieven</a>
+            </nav>
+            <div class="header-contact">
+                <a href="tel:0681901059" class="header-phone">
+                    <span>📞</span> 068 190 1059
+                </a>
+                <a href="afspraak.html" class="btn btn-cta">Gratis gesprek plannen</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="min-height: auto; padding: 100px 0 60px;">
+        <div class="hero-container">
+            <div class="hero-content" style="max-width: 600px;">
+                <p class="label">Contact</p>
+                <h1>Plan een <span class="highlight">gratis</span> kennismakingsgesprek</h1>
+                <p>In een vrijblijvend telefoongesprek van 15-20 minuten bespreken we je situatie. Ik luister naar je klachten, beantwoord je vragen en geef eerlijk advies of neurofeedback geschikt is voor jou.</p>
+
+                <div class="trust-badges" style="margin-top: 30px;">
+                    <span>✓ Gratis en vrijblijvend</span>
+                    <span>✓ Binnen 24 uur reactie</span>
+                    <span>✓ Geen verplichtingen</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Options -->
+    <section class="alt-bg">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 60px; max-width: 1100px; margin: 0 auto;">
+
+                <!-- Contact Form -->
+                <div>
+                    <h2 style="margin-bottom: 10px;">Vraag een gesprek aan</h2>
+                    <p style="color: #666; margin-bottom: 30px;">Vul het formulier in en ik neem binnen 24 uur contact met je op.</p>
+
+                    <form class="contact-form" style="background: white; padding: 40px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                            <div class="form-group">
+                                <label for="voornaam">Voornaam *</label>
+                                <input type="text" id="voornaam" name="voornaam" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="achternaam">Achternaam *</label>
+                                <input type="text" id="achternaam" name="achternaam" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mailadres *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefoon">Telefoonnummer *</label>
+                            <input type="tel" id="telefoon" name="telefoon" required>
+                            <span style="font-size: 0.85rem; color: #888;">Ik bel je op dit nummer voor het kennismakingsgesprek</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="voorkeur">Wanneer kan ik je het beste bereiken?</label>
+                            <select id="voorkeur" name="voorkeur">
+                                <option value="">Selecteer je voorkeur</option>
+                                <option value="ochtend">Ochtend (9:00 - 12:00)</option>
+                                <option value="middag">Middag (12:00 - 17:00)</option>
+                                <option value="avond">Avond (17:00 - 20:00)</option>
+                                <option value="geen">Geen voorkeur</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="klacht">Waar kan ik je mee helpen?</label>
+                            <select id="klacht" name="klacht">
+                                <option value="">Selecteer je belangrijkste klacht</option>
+                                <option value="angst-piekeren">Angst & Piekeren</option>
+                                <option value="adhd-concentratie">ADHD & Concentratieproblemen</option>
+                                <option value="burnout-stress">Burn-out & Stress</option>
+                                <option value="slaapproblemen">Slaapproblemen</option>
+                                <option value="emotieregulatie">Emotieregulatie</option>
+                                <option value="hersenschudding">Hersenschudding</option>
+                                <option value="anders">Anders / Weet ik nog niet</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="bericht">Vertel kort iets over je situatie (optioneel)</label>
+                            <textarea id="bericht" name="bericht" rows="4" placeholder="Bijvoorbeeld: Ik heb al jaren last van piekeren en slaap slecht. Ik heb medicijnen geprobeerd maar zoek iets anders..."></textarea>
+                        </div>
+
+                        <div class="form-group" style="margin-bottom: 30px;">
+                            <label style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer;">
+                                <input type="checkbox" name="privacy" required style="margin-top: 5px;">
+                                <span style="font-size: 0.9rem;">Ik ga akkoord met het <a href="#" style="color: #4A9BD9;">privacybeleid</a>. Mijn gegevens worden alleen gebruikt om contact met me op te nemen.</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-cta btn-large" style="width: 100%;">Vraag gratis gesprek aan</button>
+
+                        <p style="text-align: center; margin-top: 20px; color: #888; font-size: 0.9rem;">Ik reageer binnen 24 uur (meestal sneller)</p>
+                    </form>
+                </div>
+
+                <!-- Sidebar -->
+                <div>
+                    <!-- Direct contact -->
+                    <div style="background: white; padding: 30px; border-radius: 15px; margin-bottom: 30px; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
+                        <h3 style="margin-bottom: 20px;">Liever direct contact?</h3>
+
+                        <a href="tel:0681901059" style="display: flex; align-items: center; gap: 15px; padding: 15px; background: #f5f5f0; border-radius: 10px; margin-bottom: 15px; text-decoration: none; color: #1a1a2e; transition: all 0.2s;">
+                            <span style="font-size: 1.5rem;">📞</span>
+                            <div>
+                                <strong style="display: block;">Bel me</strong>
+                                <span style="color: #4A9BD9;">068 190 1059</span>
+                            </div>
+                        </a>
+
+                        <a href="mailto:jorien@studiobrein.nl" style="display: flex; align-items: center; gap: 15px; padding: 15px; background: #f5f5f0; border-radius: 10px; margin-bottom: 15px; text-decoration: none; color: #1a1a2e; transition: all 0.2s;">
+                            <span style="font-size: 1.5rem;">✉️</span>
+                            <div>
+                                <strong style="display: block;">E-mail me</strong>
+                                <span style="color: #4A9BD9;">jorien@studiobrein.nl</span>
+                            </div>
+                        </a>
+
+                        <a href="https://wa.me/31681901059" style="display: flex; align-items: center; gap: 15px; padding: 15px; background: #f5f5f0; border-radius: 10px; text-decoration: none; color: #1a1a2e; transition: all 0.2s;">
+                            <span style="font-size: 1.5rem;">💬</span>
+                            <div>
+                                <strong style="display: block;">WhatsApp</strong>
+                                <span style="color: #4A9BD9;">Stuur een bericht</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Praktijk info -->
+                    <div style="background: white; padding: 30px; border-radius: 15px; margin-bottom: 30px; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
+                        <h3 style="margin-bottom: 20px;">📍 De praktijk</h3>
+                        <p style="margin-bottom: 15px;">
+                            <strong>Studio Brein</strong><br>
+                            Langebuurt 17<br>
+                            1911 AS Uitgeest
+                        </p>
+                        <p style="color: #666; font-size: 0.9rem; margin-bottom: 15px;">
+                            Gratis parkeren voor de deur<br>
+                            5 minuten vanaf station Uitgeest
+                        </p>
+                        <a href="https://maps.google.com/?q=Langebuurt+17+Uitgeest" target="_blank" style="color: #4A9BD9;">Bekijk routebeschrijving →</a>
+                    </div>
+
+                    <!-- Wat te verwachten -->
+                    <div style="background: #4A9BD9; color: white; padding: 30px; border-radius: 15px;">
+                        <h3 style="margin-bottom: 20px; color: white;">Wat kun je verwachten?</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="display: flex; gap: 10px; margin-bottom: 15px;">
+                                <span>✓</span>
+                                <span>Ik bel je op het afgesproken moment</span>
+                            </li>
+                            <li style="display: flex; gap: 10px; margin-bottom: 15px;">
+                                <span>✓</span>
+                                <span>We bespreken je klachten en situatie</span>
+                            </li>
+                            <li style="display: flex; gap: 10px; margin-bottom: 15px;">
+                                <span>✓</span>
+                                <span>Ik beantwoord al je vragen</span>
+                            </li>
+                            <li style="display: flex; gap: 10px;">
+                                <span>✓</span>
+                                <span>Eerlijk advies of neurofeedback past</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <p class="label">Veelgestelde vragen</p>
+                <h2>Vragen over het maken van een afspraak</h2>
+            </div>
+            <div class="faq-container" style="max-width: 800px; margin: 0 auto;">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Hoe snel kan ik terecht?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Voor het kennismakingsgesprek neem ik binnen 24 uur contact met je op. De wachttijd voor een eerste afspraak in de praktijk is momenteel 1-2 weken.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Is het kennismakingsgesprek echt gratis?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Ja, het telefonische kennismakingsgesprek is volledig gratis en vrijblijvend. Het duurt 15-20 minuten en je zit nergens aan vast.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Kan ik ook langskomen zonder afspraak?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Ik werk alleen op afspraak om je de volledige aandacht te kunnen geven. Neem eerst telefonisch of via het formulier contact op.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Hoe bereid ik me voor op het gesprek?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Je hoeft niets voor te bereiden. Het helpt als je even nadenkt over je belangrijkste klachten en of je vragen hebt die je wilt stellen.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="logo-text">STUDIO <span style="color: #E8A54B;">BREIN.</span></div>
+                <p>Neurofeedback praktijk in Uitgeest. Al meer dan 300 cliënten geholpen op weg naar een rustiger brein.</p>
+                <p>📍 Langebuurt 17, 1911 AS Uitgeest</p>
+                <p>📞 068 190 1059</p>
+            </div>
+            <div class="footer-section">
+                <h4>Behandelingen</h4>
+                <ul>
+                    <li><a href="behandelingen.html#piekeren">Angst & Piekeren</a></li>
+                    <li><a href="behandelingen.html#concentratie">ADHD & Concentratie</a></li>
+                    <li><a href="behandelingen.html#stress">Burn-out & Stress</a></li>
+                    <li><a href="behandelingen.html#slaap">Slaapproblemen</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Informatie</h4>
+                <ul>
+                    <li><a href="hoe-werkt-het.html">Hoe werkt het</a></li>
+                    <li><a href="tarieven.html">Tarieven</a></li>
+                    <li><a href="over-jorien.html">Over Jorien</a></li>
+                    <li><a href="#">Veelgestelde vragen</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="afspraak.html">Afspraak maken</a></li>
+                    <li><a href="tel:0681901059">Bellen</a></li>
+                    <li><a href="mailto:jorien@studiobrein.nl">E-mail</a></li>
+                    <li><a href="#">Routebeschrijving</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Studio Brein. Alle rechten voorbehouden. | <a href="#" style="color: #888;">Privacy Policy</a> | <a href="#" style="color: #888;">Algemene Voorwaarden</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                const isOpen = faqItem.classList.contains('open');
+
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('open');
+                });
+
+                if (!isOpen) {
+                    faqItem.classList.add('open');
+                }
+            });
+        });
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="nl">
   <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
